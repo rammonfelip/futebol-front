@@ -40,7 +40,7 @@ export default function TabelaAtual() {
     };
 
     return (
-        <div className="bg-white shadow p-6 rounded-lg w-full max-w-3xl">
+        <div className="bg-black shadow p-6 rounded-lg w-full max-w-3xl">
             <h2 className="text-xl font-bold mb-3">Tabela Atual</h2>
 
             <button
@@ -53,7 +53,7 @@ export default function TabelaAtual() {
             {tabela.length > 0 && (
                 <table className="w-full mt-4 border-collapse">
                     <thead>
-                    <tr className="border-b bg-gray-100">
+                    <tr className="border-b bg-white-100">
                         <th className="text-left p-2">Posição</th>
                         <th className="text-left p-2">Time</th>
                         <th className="text-left p-2">PJ</th>

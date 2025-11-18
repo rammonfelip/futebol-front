@@ -44,7 +44,7 @@ export default function Campeonato() {
     };
 
     return (
-        <div className="bg-white shadow p-6 rounded-lg w-full max-w-xl">
+        <div className="bg-gray shadow p-6 rounded-lg w-full max-w-xl">
             <h2 className="text-xl font-bold mb-3">Informações do Campeonato</h2>
 
             <button

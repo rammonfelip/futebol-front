@@ -53,7 +53,7 @@ export default function PartidasModal({time, onClose, }:
 
     return (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-            <div className="bg-white w-full max-w-lg p-6 rounded shadow-lg relative">
+            <div className="bg-black w-full max-w-lg p-6 rounded shadow-lg relative">
 
                 {/* Botão de Fechar */}
                 <button
