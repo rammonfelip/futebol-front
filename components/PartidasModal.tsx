@@ -1,7 +1,11 @@
 "use client";
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 
-export default function PartidasModal({ time, onClose }) {
+export default function PartidasModal({time, onClose, }:
+    {time: any; onClose: () => void;})
+{
+    const router = useRouter();
     const [partidas, setPartidas] = useState<any | null>(null);
     const [loading, setLoading] = useState(true);
 
@@ -67,7 +71,7 @@ export default function PartidasModal({ time, onClose }) {
                     <div className="space-y-3 max-h-80 overflow-y-auto">
                         {Object.values(partidas)
                             .flat()
-                            .map((p) => (
+                            .map((p: any) => (
                                 <div key={p.partida_id} className="border p-3 rounded">
                                     <p className="font-bold">{p.campeonato}</p>
                                     <p>{p.placar}</p>

@@ -1,7 +1,9 @@
 "use client";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function Campeonato() {
+    const router = useRouter();
     const [data, setData] = useState<any | null>(null);
 
     const buscarCampeonato = async () => {

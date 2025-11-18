@@ -1,8 +1,10 @@
 "use client";
 import { useState } from "react";
 import PartidasModal from "./PartidasModal";
+import { useRouter } from "next/navigation";
 
 export default function TabelaAtual() {
+    const router = useRouter();
     const [tabela, setTabela] = useState<any[]>([]);
     const [timeSelecionado, setTimeSelecionado] = useState<any | null>(null);
 
